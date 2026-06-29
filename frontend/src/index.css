@@ -1,0 +1,126 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-on-secondary-container: #006f64;
+  --color-secondary: #006b5f;
+  --color-tertiary-fixed-dim: #ffb95f;
+  --color-on-tertiary-fixed-variant: #653e00;
+  --color-tertiary-container: #996100;
+  --color-on-error: #ffffff;
+  --color-surface-dim: #d8dadc;
+  --color-surface-bright: #f7f9fb;
+  --color-secondary-container: #6df5e1;
+  --color-surface: #f7f9fb;
+  --color-on-primary-container: #eeefff;
+  --color-inverse-on-surface: #eff1f3;
+  --color-secondary-fixed: #71f8e4;
+  --color-surface-tint: #0053db;
+  --color-ai-glow-end: #10B981;
+  --color-surface-container-high: #e6e8ea;
+  --color-on-primary-fixed: #00174b;
+  --color-primary-container: #2563eb;
+  --color-secondary-fixed-dim: #4fdbc8;
+  --color-surface-container: #eceef0;
+  --color-surface-container-highest: #e0e3e5;
+  --color-deep-void: #0F172A;
+  --color-error-container: #ffdad6;
+  --color-error: #ba1a1a;
+  --color-on-surface-variant: #434655;
+  --color-on-tertiary-fixed: #2a1700;
+  --color-on-tertiary: #ffffff;
+  --color-on-secondary-fixed: #00201c;
+  --color-ai-glow-start: #3B82F6;
+  --color-outline-variant: #c3c6d7;
+  --color-on-tertiary-container: #ffeedd;
+  --color-on-secondary: #ffffff;
+  --color-background: #f7f9fb;
+  --color-on-error-container: #93000a;
+  --color-on-primary: #ffffff;
+  --color-tertiary-fixed: #ffddb8;
+  --color-outline: #737686;
+  --color-inverse-primary: #b4c5ff;
+  --color-surface-glass: rgba(255, 255, 255, 0.7);
+  --color-primary-fixed-dim: #b4c5ff;
+  --color-on-surface: #191c1e;
+  --color-on-background: #191c1e;
+  --color-primary-fixed: #dbe1ff;
+  --color-surface-glass-dark: rgba(15, 23, 42, 0.7);
+  --color-surface-container-low: #f2f4f6;
+  --color-on-secondary-fixed-variant: #005048;
+  --color-on-primary-fixed-variant: #003ea8;
+  --color-primary: #004ac6;
+  --color-inverse-surface: #2d3133;
+
+  /* Spacings */
+  --spacing-margin-page: 48px;
+  --spacing-stack-md: 16px;
+  --spacing-stack-sm: 8px;
+  --spacing-gutter: 24px;
+  --spacing-margin-mobile: 20px;
+  --spacing-unit: 8px;
+  --spacing-stack-lg: 32px;
+
+  /* Font Families */
+  --font-body-lg: "Inter", sans-serif;
+  --font-headline-md: "Plus Jakarta Sans", sans-serif;
+  --font-label-sm: "Inter", sans-serif;
+  --font-headline-sm: "Plus Jakarta Sans", sans-serif;
+  --font-display-hero: "Plus Jakarta Sans", sans-serif;
+  --font-body-md: "Inter", sans-serif;
+  --font-headline-lg: "Plus Jakarta Sans", sans-serif;
+  --font-label-md: "Inter", sans-serif;
+  --font-headline-lg-mobile: "Plus Jakarta Sans", sans-serif;
+}
+
+/* Custom Base / Component Styles */
+body {
+  min-height: max(884px, 100dvh);
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  user-select: none;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.dark .glass-card {
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ai-glow {
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.15);
+}
+
+@keyframes subtle-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.9; transform: scale(1.02); }
+}
+
+.animate-ai-pulse {
+  animation: subtle-pulse 3s infinite ease-in-out;
+}
+
+/* Custom styles for map visualization */
+.map-canvas-stub {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.map-canvas-stub::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, transparent 30%, rgba(15, 23, 42, 0.1) 100%);
+}
