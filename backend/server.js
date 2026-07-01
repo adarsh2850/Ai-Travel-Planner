@@ -15,17 +15,28 @@ connectDB();
 const app = express();
 
 // ── Middleware ──────────────────────────────────────────────
-const corsOrigin =
-  process.env.NODE_ENV === 'development'
-    ? (origin, cb) => {
-        // Allow any localhost port in development, plus requests with no origin (curl, etc.)
-        if (!origin || /^https?:\/\/localhost(:\d+)?$/.test(origin)) {
-          cb(null, true);
-        } else {
-          cb(new Error('Not allowed by CORS'));
-        }
-      }
-    : process.env.FRONTEND_URL || 'http://localhost:5173';
+const allowedOrigins = [
+  process.env.FRONTEND_URL,
+  'http://localhost:5173',
+  'http://localhost:5000'
+].filter(Boolean);
+
+const corsOrigin = (origin, cb) => {
+  // Allow requests with no origin (like mobile apps, postman, curl)
+  if (!origin) {
+    return cb(null, true);
+  }
+
+  const isAllowed = allowedOrigins.includes(origin);
+  const isLocalhost = /^https?:\/\/localhost(:\d+)?$/.test(origin);
+  const isVercel = /\.vercel\.app$/.test(origin);
+
+  if (isAllowed || isLocalhost || isVercel) {
+    cb(null, true);
+  } else {
+    cb(new Error('Not allowed by CORS'));
+  }
+};
 
 app.use(
   cors({
