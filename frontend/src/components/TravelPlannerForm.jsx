@@ -173,7 +173,7 @@ export default function TravelPlannerForm({ isOpen, onClose, initialDestination,
           <h2 style={{ fontFamily: T.display, fontWeight: 800, fontSize: 24, color: '#fff', margin: '0 0 12px',
             background: `linear-gradient(135deg, ${T.brand}, ${T.teal})`,
             WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
-            Lumina is curating your trip
+            sarthiAi is curating your trip
           </h2>
           <p style={{ color: '#94A3B8', fontFamily: T.sans, fontSize: 14, minHeight: 22, transition: 'all 0.3s' }}>
             {GENERATION_STEPS[genStep]}
@@ -236,13 +236,13 @@ export default function TravelPlannerForm({ isOpen, onClose, initialDestination,
               <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginBottom: 6 }}>
                 <span className="material-symbols-outlined leading-none" style={{ fontSize: 16, color: T.brand }}>explore</span>
                 <span style={{ fontFamily: T.sans, fontSize: 12, fontWeight: 700, color: T.brand,
-                  textTransform: 'uppercase', letterSpacing: '0.08em' }}>Lumina Travel</span>
+                  textTransform: 'uppercase', letterSpacing: '0.08em' }}>sarthiAi</span>
               </div>
               <h1 style={{ fontFamily: T.display, fontWeight: 800, fontSize: 26, color: '#0F172A', margin: 0, lineHeight: 1.2 }}>
                 Where to next?
               </h1>
               <p style={{ fontFamily: T.sans, fontSize: 13, color: '#64748B', margin: '6px 0 0', lineHeight: 1.5 }}>
-                Let Lumina's neural engine curate your perfect escape based on your distinct travel identity.
+                Let sarthiAi's neural engine curate your perfect escape based on your distinct travel identity.
               </p>
             </div>
             <button onClick={onClose}

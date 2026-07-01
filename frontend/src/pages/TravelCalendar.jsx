@@ -191,7 +191,7 @@ export default function TravelCalendar() {
             <h4 className="text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-3">AI Recommendations Calendar</h4>
             <div className="p-3 bg-indigo-50/50 dark:bg-indigo-950/20 rounded-2xl text-[11px] text-slate-600 dark:text-indigo-300 leading-relaxed border border-indigo-100/40 dark:border-indigo-950/40">
               <strong className="block mb-1 text-indigo-600 dark:text-indigo-400">Smart Calendar Alert</strong>
-              Add your flight booking code and Lumina AI will automatically sync your hotel check-ins and suggest localized weekend trips.
+              Add your flight booking code and sarthiAi will automatically sync your hotel check-ins and suggest localized weekend trips.
             </div>
           </div>
         </div>

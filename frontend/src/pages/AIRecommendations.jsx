@@ -93,7 +93,7 @@ export default function AIRecommendations({ onStartPlan }) {
             AI Recommendations
           </h1>
           <p className="text-slate-500 dark:text-slate-400 mt-1">
-            Personalized destinations selected by Lumina Engine matching your past travels and profile interests.
+            Personalized destinations selected by sarthiAi Engine matching your past travels and profile interests.
           </p>
         </div>
       </div>

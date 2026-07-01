@@ -43,7 +43,7 @@ app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 app.get('/api/health', (req, res) => {
   res.status(200).json({
     success: true,
-    message: 'Lumina Travel API is running',
+    message: 'sarthiAi API is running',
   });
 });
 
@@ -72,6 +72,6 @@ app.use((err, req, res, next) => {
 // ── Start Server ────────────────────────────────────────────
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
-  console.log(`🚀 Lumina Travel API running on http://localhost:${PORT}`);
+  console.log(`🚀 sarthiAi API running on http://localhost:${PORT}`);
   console.log(`📡 Environment: ${process.env.NODE_ENV}`);
 });

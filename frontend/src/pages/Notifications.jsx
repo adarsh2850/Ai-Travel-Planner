@@ -25,7 +25,7 @@ const INITIAL_NOTIFICATIONS = [
   {
     id: 3,
     title: 'AI Travel Hack: Dinner in Munnar',
-    body: 'Lumina AI suggests visiting Rapsy Restaurant for the best local Keralan parotta. It is just 5 mins from your hotel!',
+    body: 'sarthiAi suggests visiting Rapsy Restaurant for the best local Keralan parotta. It is just 5 mins from your hotel!',
     category: 'AI Tips',
     time: '5 hours ago',
     read: true,

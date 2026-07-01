@@ -7,7 +7,7 @@ export default function SettingsPage({ isDark, onToggleDark }) {
 
   const handleDeleteAccount = () => {
     const confirmation = window.confirm(
-      "WARNING: Are you sure you want to delete your Lumina account? This will permanently wipe all your saved trips, reviews, rewards, and journal logs. This action CANNOT be undone."
+      "WARNING: Are you sure you want to delete your sarthiAi account? This will permanently wipe all your saved trips, reviews, rewards, and journal logs. This action CANNOT be undone."
     );
     if (confirmation) {
       alert("Account deletion request submitted. Logging you out.");

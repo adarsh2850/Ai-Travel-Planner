@@ -159,7 +159,7 @@ export default function ItineraryView({ itinerary, onEdit, onSave, onUpdateNotes
               {itinerary.destination}
             </h1>
             <p style={{ color: '#94A3B8', fontSize: 14, margin: 0, maxWidth: 520, lineHeight: 1.6 }}>
-              Your {itinerary.duration}-day {itinerary.vibe.toLowerCase()} journey, crafted by Lumina's neural engine.
+              Your {itinerary.duration}-day {itinerary.vibe.toLowerCase()} journey, crafted by sarthiAi's neural engine.
               {itinerary.duration} unique days of organic cultural exploration await.
             </p>
           </div>

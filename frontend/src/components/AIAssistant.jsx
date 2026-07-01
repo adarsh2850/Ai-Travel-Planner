@@ -9,7 +9,7 @@ export default function AIAssistant({ currentItinerary, onModifyItinerary }) {
   const [messages, setMessages] = useState([
     {
       sender: 'ai',
-      text: 'Welcome to Lumina! ✈️ I am your real-time travel agent. You can ask me to modify your current itinerary on the fly! Try typing: "make it luxury" or "switch to eco-zen" or tap one of the quick suggestions below.'
+      text: 'Welcome to sarthiAi! ✈️ I am your real-time travel agent. You can ask me to modify your current itinerary on the fly! Try typing: "make it luxury" or "switch to eco-zen" or tap one of the quick suggestions below.'
     }
   ]);
   const [inputText, setInputText] = useState('');
@@ -111,7 +111,7 @@ export default function AIAssistant({ currentItinerary, onModifyItinerary }) {
             <div className="flex items-center gap-3">
               <span className="material-symbols-outlined text-[28px] bg-white/20 p-1.5 rounded-full">smart_toy</span>
               <div>
-                <h4 className="font-bold text-sm leading-tight">Lumina Assistant</h4>
+                <h4 className="font-bold text-sm leading-tight">sarthiAi Assistant</h4>
                 <span className="text-[10px] text-primary-fixed/80 flex items-center gap-1">
                   <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse"></span>
                   Online Travel Agent

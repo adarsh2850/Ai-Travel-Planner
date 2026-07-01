@@ -67,7 +67,7 @@ export default function Login() {
             <span className="material-symbols-outlined text-[#004ac6] text-3xl leading-none">explore</span>
             <span className="text-2xl font-extrabold bg-gradient-to-r from-[#3B82F6] to-[#10B981] bg-clip-text text-transparent"
               style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
-              Lumina Travel
+              sarthiAi
             </span>
           </Link>
           <h1 className="text-[28px] font-bold text-[#191c1e] mt-1" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>

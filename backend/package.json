@@ -1,7 +1,7 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "Lumina Travel AI — Express/MongoDB API",
+  "description": "sarthiAi — Express/MongoDB API",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",

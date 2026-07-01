@@ -11,32 +11,32 @@ export const AuthProvider = ({ children }) => {
 
   // Restore session from localStorage on mount
   useEffect(() => {
-    const storedToken = localStorage.getItem('lumina_token');
-    const storedUser = localStorage.getItem('lumina_user');
+    const storedToken = localStorage.getItem('sarthiai_token');
+    const storedUser = localStorage.getItem('sarthiai_user');
 
     if (storedToken && storedUser) {
       try {
         setToken(storedToken);
         setUser(JSON.parse(storedUser));
       } catch {
-        localStorage.removeItem('lumina_token');
-        localStorage.removeItem('lumina_user');
+        localStorage.removeItem('sarthiai_token');
+        localStorage.removeItem('sarthiai_user');
       }
     }
     setLoading(false);
   }, []);
 
   const persistSession = (userData, tokenValue) => {
-    localStorage.setItem('lumina_token', tokenValue);
-    localStorage.setItem('lumina_user', JSON.stringify(userData));
+    localStorage.setItem('sarthiai_token', tokenValue);
+    localStorage.setItem('sarthiai_user', JSON.stringify(userData));
     setToken(tokenValue);
     setUser(userData);
     setError(null);
   };
 
   const clearSession = () => {
-    localStorage.removeItem('lumina_token');
-    localStorage.removeItem('lumina_user');
+    localStorage.removeItem('sarthiai_token');
+    localStorage.removeItem('sarthiai_user');
     setToken(null);
     setUser(null);
   };
@@ -74,7 +74,7 @@ export const AuthProvider = ({ children }) => {
   const updateProfile = useCallback(async (profileData) => {
     const res = await authAPI.updateProfile(profileData);
     const updatedUser = res.data.user;
-    localStorage.setItem('lumina_user', JSON.stringify(updatedUser));
+    localStorage.setItem('sarthiai_user', JSON.stringify(updatedUser));
     setUser(updatedUser);
     return updatedUser;
   }, []);

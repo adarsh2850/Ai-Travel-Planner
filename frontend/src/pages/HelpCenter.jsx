@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const FAQS = [
-  { q: 'How does the AI create itineraries?', a: 'Lumina utilizes destination meta-data, weather forecasts, and customized filters (like vibe and budget) to craft tailored, hour-by-hour schedules.' },
+  { q: 'How does the AI create itineraries?', a: 'sarthiAi utilizes destination meta-data, weather forecasts, and customized filters (like vibe and budget) to craft tailored, hour-by-hour schedules.' },
   { q: 'Can I link my real booking codes?', a: 'Yes! Navigate to Travel Documents, upload your flight or hotel PDF tickets, and our engine automatically parses confirmation keys to plot your calendar.' },
-  { q: 'What is the Eco Score rating?', a: 'Lumina assesses your transportation modes (rail, flight, walking) and hotel sustainability certifications to generate an eco-friendly score.' },
+  { q: 'What is the Eco Score rating?', a: 'sarthiAi assesses your transportation modes (rail, flight, walking) and hotel sustainability certifications to generate an eco-friendly score.' },
 ];
 
 export default function HelpCenter() {
@@ -12,7 +12,7 @@ export default function HelpCenter() {
   const [bugDesc, setBugDesc] = useState('');
   const [supportMessage, setSupportMessage] = useState('');
   const [chatLog, setChatLog] = useState([
-    { sender: 'AI Agent', msg: 'Hi there! I am your Lumina Support Assistant. How can I help you today?' }
+    { sender: 'AI Agent', msg: 'Hi there! I am your sarthiAi Support Assistant. How can I help you today?' }
   ]);
   const [chatInput, setChatInput] = useState('');
 
@@ -45,7 +45,7 @@ export default function HelpCenter() {
       {/* Title */}
       <div>
         <h1 className="text-3xl font-extrabold tracking-tight text-slate-900 dark:text-slate-100 font-display">
-          Lumina Help Center
+          sarthiAi Help Center
         </h1>
         <p className="text-slate-500 dark:text-slate-400 mt-1">
           Find instant answers to FAQs, test issues with our AI support bot, or submit bug reports.
@@ -117,7 +117,7 @@ export default function HelpCenter() {
             <div className="flex items-center gap-2">
               <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse" />
               <h3 className="text-sm font-bold text-slate-900 dark:text-white font-display">
-                Lumina Support Chat
+                sarthiAi Support Chat
               </h3>
             </div>
             <p className="text-[10px] text-slate-400 mt-0.5">Average wait: Under 2 mins</p>

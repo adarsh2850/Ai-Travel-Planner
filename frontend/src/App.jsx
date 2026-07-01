@@ -73,7 +73,7 @@ function HomePage() {
   const navigate = useNavigate();
   const { user, logout, isAuthenticated } = useAuth();
 
-  const [isDark, setIsDark]                 = useState(() => localStorage.getItem('lumina_dark') === 'true');
+  const [isDark, setIsDark]                 = useState(() => localStorage.getItem('sarthiai_dark') === 'true');
   const [searchQuery, setSearchQuery]       = useState('');
   const [isPlannerOpen, setIsPlannerOpen]   = useState(false);
   const [plannerDest, setPlannerDest]       = useState('');
@@ -121,7 +121,7 @@ function HomePage() {
   useEffect(() => {
     document.documentElement.classList.toggle('dark', isDark);
     document.documentElement.classList.toggle('light', !isDark);
-    localStorage.setItem('lumina_dark', isDark ? 'true' : 'false');
+    localStorage.setItem('sarthiai_dark', isDark ? 'true' : 'false');
   }, [isDark]);
 
   const [openDropdown, setOpenDropdown]     = useState(null);
@@ -416,7 +416,7 @@ function HomePage() {
           <div className="flex items-center gap-2 cursor-pointer select-none" onClick={() => setActiveTab('Discover')}>
             <span className="material-symbols-outlined leading-none text-indigo-500 font-extrabold" style={{ fontSize: 24 }}>explore</span>
             <span className="font-display font-extrabold text-md bg-gradient-to-r from-indigo-500 to-teal-500 bg-clip-text text-transparent mr-2">
-              Lumina Travel
+              sarthiAi
             </span>
           </div>
 
@@ -635,11 +635,11 @@ function HomePage() {
                       <div className="inline-flex items-center gap-1.5 bg-indigo-50 dark:bg-indigo-950/30 border border-indigo-100 dark:border-indigo-900/60 px-3.5 py-1.5 rounded-full mb-6 shadow-sm">
                         <span className="material-symbols-outlined text-indigo-500 text-xs font-bold">auto_awesome</span>
                         <span className="text-[10px] text-indigo-600 dark:text-indigo-400 font-extrabold uppercase tracking-wider">
-                          Lumina AI Curation Active
+                          sarthiAi Curation Active
                         </span>
                       </div>
                       <h1 className="text-4xl md:text-5xl font-black font-display tracking-tight text-slate-950 dark:text-white leading-tight">
-                        Map Your Next <span className="bg-gradient-to-r from-indigo-550 to-teal-500 bg-clip-text text-transparent">Adventure</span>
+                        Map Your Next <span className="bg-gradient-to-r from-indigo-500 to-teal-500 bg-clip-text text-transparent">Adventure</span>
                       </h1>
                       <p className="text-slate-500 dark:text-slate-400 text-sm mt-3 leading-relaxed max-w-md mx-auto">
                         Experience intelligent, bespoke travel planner itineraries optimized with weather radars and budget caps.
@@ -902,10 +902,10 @@ function HomePage() {
           <div className="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="flex items-center gap-2 cursor-pointer select-none" onClick={() => setActiveTab('Discover')}>
               <span className="material-symbols-outlined text-slate-450 leading-none" style={{ fontSize: 20 }}>explore</span>
-              <span className="font-display font-extrabold text-sm text-white">Lumina Travel AI</span>
+              <span className="font-display font-extrabold text-sm text-white">sarthiAi</span>
             </div>
             <p className="font-sans">
-              © 2026 Lumina Travel AI. Custom luxury and eco-friendly smart curation.
+              © 2026 sarthiAi. Custom luxury and eco-friendly smart curation.
             </p>
             <div className="flex gap-4 font-bold text-slate-400">
               <button onClick={() => setActiveTab('Help Center')} className="hover:text-white cursor-pointer">Support</button>
@@ -938,8 +938,8 @@ function HomePage() {
                 <div className="flex items-center justify-between px-5 h-16 border-b border-slate-100 dark:border-slate-700/60">
                   <div className="flex items-center gap-2" onClick={() => { setActiveTab('Discover'); setMobileMenuOpen(false); }}>
                     <span className="material-symbols-outlined text-indigo-500" style={{ fontSize: 22 }}>explore</span>
-                    <span className="font-display font-extrabold text-sm bg-gradient-to-r from-indigo-550 to-teal-500 bg-clip-text text-transparent">
-                      Lumina Travel
+                    <span className="font-display font-extrabold text-sm bg-gradient-to-r from-indigo-500 to-teal-500 bg-clip-text text-transparent">
+                      sarthiAi
                     </span>
                   </div>
                   <button onClick={() => setMobileMenuOpen(false)} className="text-slate-400 cursor-pointer">

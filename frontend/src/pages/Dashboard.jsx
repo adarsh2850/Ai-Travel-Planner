@@ -121,7 +121,7 @@ export default function Dashboard({ onTabChange, user, activeItinerary }) {
             </h3>
             <div className="p-4 bg-slate-50 dark:bg-slate-900/60 rounded-2xl flex items-center justify-between">
               <div>
-                <span className="text-[9px] uppercase tracking-wider text-slate-400 font-semibold block">Lumina Gold Balance</span>
+                <span className="text-[9px] uppercase tracking-wider text-slate-400 font-semibold block">sarthiAi Gold Balance</span>
                 <span className="text-3xl font-black text-indigo-600 dark:text-indigo-400 font-display">1,450</span>
               </div>
               <span className="material-symbols-outlined text-yellow-500 text-3xl font-light">stars</span>

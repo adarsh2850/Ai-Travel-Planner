@@ -190,7 +190,7 @@ export default function PaymentCenter() {
               <div className="flex items-center gap-3">
                 <span className="material-symbols-outlined text-indigo-600 text-2xl">payments</span>
                 <div>
-                  <h4 className="text-sm font-bold text-slate-900 dark:text-white">Lumina Wallet</h4>
+                  <h4 className="text-sm font-bold text-slate-900 dark:text-white">sarthiAi Wallet</h4>
                   <p className="text-xs text-slate-400">Balance: ₹4,850</p>
                 </div>
               </div>

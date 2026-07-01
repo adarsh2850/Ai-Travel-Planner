@@ -25,11 +25,11 @@ export default function RewardsLoyalty() {
     }
     setPoints(points - cost);
     setCoupons(prev => prev.map(c => c.id === id ? { ...c, redeemed: true } : c));
-    alert(`Successfully redeemed coupon: ${id}! Code: LUMINA-${Math.floor(Math.random()*9000)+1000}`);
+    alert(`Successfully redeemed coupon: ${id}! Code: SARTHIAI-${Math.floor(Math.random()*9000)+1000}`);
   };
 
   const inviteFriend = () => {
-    navigator.clipboard.writeText("https://luminatravel.ai/invite?ref=adarsh48");
+    navigator.clipboard.writeText("https://sarthiai.com/invite?ref=adarsh48");
     alert("Referral link copied! Send it to your friend to earn 250 points upon signup.");
   };
 
@@ -72,7 +72,7 @@ export default function RewardsLoyalty() {
           <span className="text-4xl font-black text-yellow-400 font-display block mt-1">
             {points.toLocaleString()}
           </span>
-          <span className="text-[10px] text-indigo-200 block mt-1">Lumina Gold Coins</span>
+          <span className="text-[10px] text-indigo-200 block mt-1">sarthiAi Gold Coins</span>
         </div>
       </div>
 
@@ -126,10 +126,10 @@ export default function RewardsLoyalty() {
               Invite Friends
             </h3>
             <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed font-sans">
-              Earn 250 points for every friend who signs up and builds their first AI trip itinerary on Lumina!
+              Earn 250 points for every friend who signs up and builds their first AI trip itinerary on sarthiAi!
             </p>
             <div className="bg-slate-50 dark:bg-slate-900 px-3.5 py-2.5 rounded-xl border border-slate-200/50 dark:border-slate-700/60 font-mono text-[10px] tracking-tight text-slate-400 text-center select-all mt-4">
-              https://luminatravel.ai/invite?ref=adarsh48
+              https://sarthiai.com/invite?ref=adarsh48
             </div>
           </div>
           <button

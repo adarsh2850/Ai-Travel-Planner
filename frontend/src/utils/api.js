@@ -12,7 +12,7 @@ const api = axios.create({
 // Request interceptor: attach JWT token automatically
 api.interceptors.request.use(
   (config) => {
-    const token = localStorage.getItem('lumina_token');
+    const token = localStorage.getItem('sarthiai_token');
     if (token) {
       config.headers.Authorization = `Bearer ${token}`;
     }
@@ -30,8 +30,8 @@ api.interceptors.response.use(
       const url = error.config?.url || '';
       const isAuthRoute = url.includes('/auth/login') || url.includes('/auth/signup');
       if (!isAuthRoute) {
-        localStorage.removeItem('lumina_token');
-        localStorage.removeItem('lumina_user');
+        localStorage.removeItem('sarthiai_token');
+        localStorage.removeItem('sarthiai_user');
         window.location.href = '/login';
       }
     }
