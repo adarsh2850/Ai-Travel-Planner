@@ -1,6 +1,11 @@
 import axios from 'axios';
 
-const BASE_URL = import.meta.env.VITE_API_URL || 'https://ai-travel-planner-f6b3.onrender.com/';
+let BASE_URL = import.meta.env.VITE_API_URL || 'https://ai-travel-planner-f6b3.onrender.com/api';
+
+// Auto-append '/api' if it's missing from the configured environment URL
+if (BASE_URL && !BASE_URL.endsWith('/api') && !BASE_URL.endsWith('/api/')) {
+  BASE_URL = BASE_URL.replace(/\/$/, '') + '/api';
+}
 
 // Create axios instance with base config
 const api = axios.create({
